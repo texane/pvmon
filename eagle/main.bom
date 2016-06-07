@@ -36,7 +36,7 @@ x1
 U2
 LDO 3.3V 800mA
 http://fr.farnell.com/texas-instruments/lm1117mp-3-3/regulateur-ldo-3-3v-1117-sot-223/dp/9778195
-0.867
+0.867 euros
 x1
 
 
@@ -48,8 +48,18 @@ microsd connector
 xxx
 
 
-borniers puissance
 xxx
+http://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006
+power connectors 4 channels
+0.606 euros
+x3
+
+
+SPI comm connector
+xxx
+xxx
+xxx
+x1
 
 
 USB cable
