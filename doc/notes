@@ -1,0 +1,126 @@
+[ power supplies ]
+
+vin = 19V to 12V
+vout = 5V
+iout = 1A
+
+vin = 5V
+vout = 3.3V
+iout = 800mA
+
+connect 5V to Vin, cut VUSB traces
+
+part:
+http://fr.farnell.com/tracopower/tsrn-1-2450/convertisseur-dc-dc-1a-5v/dp/2280247
+http://fr.farnell.com/texas-instruments/lm1117mp-3-3/regulateur-ldo-3-3v-1117-sot-223/dp/9778195
+
+
+
+[ voltage monitor ]
+
+vmax = 30V
+vref = 1.2V
+
+voltage divider based
+vadc = vin * r2 / (r1 + r2)
+1.2 = 30 * r2 / (r1 + r2)
+1.2 / (30 * r2) = 1 / (r1 + r2)
+r1 + r2 = (30 * r2) / 1.2
+r1 = (30 * r2) / 1.2 - r2
+
+if r2 = 20000, r1 = 48000
+if r2 = 40000, r1 = 96000
+
+voltage resolution:
+we have
+vadc = vin * r2 / (r1 + r2)
+and
+vadc = xadc * vref / 2^16
+thus
+vin * r2 / (r1 + r2) = xadc * vref / 2^16
+vin = (xadc * vref * (r1 + r2)) / (2^16 * r2)
+if xadc = 1, r2 = 40000, r1 = 96000 then
+vin ~ 0.000062
+
+
+
+[ current monitor ]
+
+possible instrumentation amplifiers:
+ina139: variable gain (esp. for gains)
+ina210 to ina215: fixed gain models (from 50 to 1000)
+
+we have:
+vout = (i * r) * gain
+thus gain = vout / (i * r)
+
+max(vout) = vref = 1.2V
+max(i) = 10A
+
+r = vref / (10 * gain)
+resistor versus gain table:
+gain 50     75     100    200    500    1000
+r    0.0024 0.0016 0.0012 0.0006 0.00024 0.00012
+
+final choices:
+
+resistor: 0.002 Ohms, 1% tolerance
+http://fr.farnell.com/te-connectivity/tlr3a10dr002ftdg/resistance-fixe-r002-1-0w-1-2512/dp/2332283
+http://fr.farnell.com/welwyn/ulr1-r002ft2/resistance-metal-strip-r002-1w/dp/1292476
+http://fr.farnell.com/panasonic-electronic-components/erjmp4mf2m0u/resi-mesure-courant-aecq200-0/dp/2550952
+http://www.mouser.fr/Passive-Components/Resistors/Current-Sense-Resistors/Current-Sense-Resistors-SMD/_/N-7fjcg?P=1yzc7drZ1z0wljo&Keyword=resistance+0.002+1%25&FS=True
+
+amplifier: ina213 (x50 gain)
+http://fr.farnell.com/texas-instruments/ina213aidckt/ic-curr-shunt-mon-50v-vsc70-6/dp/1754261
+
+current resolution:
+we have: v = ri * g
+thus: i = v / rg
+also, vmin = vref / 2^16 = 1.2 / 2^16
+thus imin ~ 200uA
+
+
+references
+http://www.eetimes.com/document.asp?doc_id=1279404&page_number=1
+
+
+[ communication ]
+
+USB serial (PC connection)
+SPI (for connection with other UC)
+
+
+[ loads ]
+
+laptop (220V, 19V)
+dedibox (220V, 19V)
+desktop light (220V, 12V)
+ambiant lights (LED based)
+usb chargers (5V)
+
+
+[ specifications ]
+
+. common electrical characteritics:
+.. vmax: 25V
+.. vres: ~100mV
+.. imax: 10A
+.. ires: 10mA
+
+points of measure
+. PV voltage, input of PV controller
+. PV current, input of PV controller
+. load voltage, output of PV controller
+. load current, output of PV controller
+. battery voltage, output of PV controller (optional)
+. battery current, output of PV controller (optional)
+. alerts
+
+. 7 items, 2 bytes per item = 14 bytes per sample
+. time series 0.2Hz
+. 1 year SD card storage = (12 * 31 * 24 * 60 * 60 * 0.2 * 14) / (1024 * 1024) = 90MB
+. usb serial connection to retrieve data
+
+alerts:
+. low battery (LED based)
+. monitor enabled
