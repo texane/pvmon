@@ -1,0 +1,55 @@
+R1
+current sense resistor, 0.002 Ohms, 1% tolerance
+http://fr.farnell.com/te-connectivity/tlr3a10dr002ftdg/resistance-fixe-r002-1-0w-1-2512/dp/2332283
+1.33 euros
+x3
+
+
+U1
+instrumentation amplifier
+http://fr.farnell.com/texas-instruments/ina213aidckt/ic-curr-shunt-mon-50v-vsc70-6/dp/1754261
+2.01 euros
+x3
+
+
+R2
+96K resistor
+xxx
+xxx
+x3
+
+
+R3
+48K resistor
+xxx
+xxx
+x3
+
+
+xxx
+DC/DC converter, 5V
+http://fr.farnell.com/tracopower/tsrn-1-2450/convertisseur-dc-dc-1a-5v/dp/2280247
+10.20 euros
+x1
+
+
+U2
+LDO 3.3V 800mA
+http://fr.farnell.com/texas-instruments/lm1117mp-3-3/regulateur-ldo-3-3v-1117-sot-223/dp/9778195
+0.867
+x1
+
+
+female headers
+xxx
+
+
+microsd connector
+xxx
+
+
+borniers puissance
+xxx
+
+
+USB cable
