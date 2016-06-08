@@ -13,17 +13,31 @@ x3
 
 
 R2
-96K resistor
-xxx
-xxx
+470K resistor
+http://fr.farnell.com/te-connectivity/cpf0603b470ke1/res-couche-mince-470k-0-1-0-063w/dp/2331232
+0.612 euros
 x3
 
 
 R3
-48K resistor
-xxx
-xxx
+20K resistor
+http://fr.farnell.com/te-connectivity/cpf0603b20ke1/res-couche-mince-20k-0-1-0-063w/dp/2331029
+0.599 euros
 x3
+
+
+xxx
+100nF ceramic capacitor
+http://fr.farnell.com/walsin/0805b104k500ct/condensateur-mlcc-x7r-0-1uf-50v/dp/2496944
+0.0148 euros
+x6
+
+
+xxx
+10uF tantlium capacitor
+http://fr.farnell.com/avx/tajb106k020rnj/condensateur-tantale-10uf-20v/dp/197427
+0.581 euros
+x4
 
 
 xxx
@@ -44,13 +58,16 @@ female headers
 xxx
 
 
+xxx
 microsd connector
-xxx
+http://fr.farnell.com/molex/502570-0893/connecteur-carte-memoire-microsd/dp/2060731
+1.84 euros
+x1
 
 
 xxx
-http://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006
 power connectors 4 channels
+http://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006
 0.606 euros
 x3
 

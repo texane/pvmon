@@ -28,8 +28,7 @@ vadc = vin * r2 / (r1 + r2)
 r1 + r2 = (30 * r2) / 1.2
 r1 = (30 * r2) / 1.2 - r2
 
-if r2 = 20000, r1 = 48000
-if r2 = 40000, r1 = 96000
+r1 ~= 470K, r2 = 20K
 
 voltage resolution:
 we have
@@ -39,8 +38,8 @@ vadc = xadc * vref / 2^16
 thus
 vin * r2 / (r1 + r2) = xadc * vref / 2^16
 vin = (xadc * vref * (r1 + r2)) / (2^16 * r2)
-if xadc = 1, r2 = 40000, r1 = 96000 then
-vin ~ 0.000062
+if xadc = 1, r2 = 20K, r1 = 470K then
+res(vin) ~ 450uV
 
 
 
