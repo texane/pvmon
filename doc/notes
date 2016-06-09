@@ -115,11 +115,23 @@ points of measure
 . battery current, output of PV controller (optional)
 . alerts
 
-. 7 items, 2 bytes per item = 14 bytes per sample
-. time series 0.2Hz
-. 1 year SD card storage = (12 * 31 * 24 * 60 * 60 * 0.2 * 14) / (1024 * 1024) = 90MB
 . usb serial connection to retrieve data
 
 alerts:
 . low battery (LED based)
 . monitor enabled
+
+
+[ acquisition memory ]
+
+FLASH spi size computation
+
+each record is 8 items, 2 bytes per item = 16 bytes per sample
+optimized version: 3 bytes per sample x 3 = 9 + 1 byte for alerts = 10 bytes
+sampling period: 1 sample every 30 seconds
+with a 16MB memory card, we can store n samples:
+16 * 1024 * 1024 = 10 x n
+n = 16 * 1024 * 1024 / 10
+which equals d days:
+d = (n * 30) / (60 * 60 * 24)
+d = 582

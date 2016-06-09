@@ -16085,99 +16085,124 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-molex-microsd">
+<library name="Spansion_By_element14_Batch_1">
+<description>Developed by element14 :&lt;br&gt;
+element14 CAD Library consolidation.ulp
+at 25/07/2012 10:26:07</description>
 <packages>
-<package name="MICRO_SD_CONNECTOR">
-<wire x1="-7.49" y1="-8.4" x2="7.81" y2="-8.4" width="0.127" layer="21"/>
-<wire x1="7.81" y1="-8.4" x2="7.81" y2="7.4" width="0.127" layer="21"/>
-<wire x1="7.81" y1="7.4" x2="-7.49" y2="7.4" width="0.127" layer="21"/>
-<wire x1="-7.49" y1="7.4" x2="-7.49" y2="-8.4" width="0.127" layer="21"/>
-<wire x1="-2.79" y1="-8.4" x2="-2.79" y2="-8.5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-2.79" y1="-8.5" x2="-1.79" y2="-9.5" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="-1.79" y1="-9.5" x2="5.01" y2="-9.5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="5.01" y1="-9.5" x2="6.01" y2="-8.5" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="6.01" y1="-8.5" x2="6.01" y2="-8.4" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-2.79" y1="-8.5" x2="-2.79" y2="-9.4" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-2.79" y1="-9.4" x2="-1.79" y2="-10.4" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="-1.79" y1="-10.4" x2="5.01" y2="-10.4" width="0.127" layer="51" style="shortdash"/>
-<wire x1="5.01" y1="-10.4" x2="6.01" y2="-9.4" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="6.01" y1="-9.4" x2="6.01" y2="-8.5" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-2.79" y1="-9.4" x2="-2.79" y2="-13" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-2.79" y1="-13" x2="-1.79" y2="-14" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="-1.79" y1="-14" x2="5.01" y2="-14" width="0.127" layer="51" style="shortdash"/>
-<wire x1="5.01" y1="-14" x2="6.01" y2="-13" width="0.127" layer="51" style="shortdash" curve="90"/>
-<wire x1="6.01" y1="-13" x2="6.01" y2="-9.4" width="0.127" layer="51" style="shortdash"/>
-<wire x1="-2.79" y1="-8.4" x2="-2.79" y2="-6.8" width="0.127" layer="21"/>
-<wire x1="-2.79" y1="-6.8" x2="-1.79" y2="-5.8" width="0.127" layer="21" curve="-90"/>
-<wire x1="-1.79" y1="-5.8" x2="5.01" y2="-5.8" width="0.127" layer="21"/>
-<wire x1="5.01" y1="-5.8" x2="6.01" y2="-6.8" width="0.127" layer="21" curve="-90"/>
-<wire x1="6.01" y1="-6.8" x2="6.01" y2="-8.4" width="0.127" layer="21"/>
-<smd name="1" x="-2.03" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50" rot="R180"/>
-<smd name="2" x="-0.93" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="3" x="0.17" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="4" x="1.27" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="5" x="2.37" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="6" x="3.47" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="7" x="4.57" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="8" x="5.67" y="8.2" dx="0.8" dy="1.6" layer="1" roundness="50"/>
-<smd name="9" x="7.735" y="5.7" dx="1.55" dy="2.8" layer="1" roundness="50"/>
-<smd name="10" x="7.735" y="-2" dx="1.55" dy="2.1" layer="1" roundness="50"/>
-<smd name="11" x="7.81" y="-6.75" dx="1.4" dy="1.9" layer="1" roundness="50"/>
-<smd name="12" x="-6.79" y="-7.75" dx="1.4" dy="1.9" layer="1" roundness="50"/>
-<smd name="14" x="-7.49" y="6.6" dx="1.4" dy="3" layer="1" roundness="50"/>
-<smd name="15" x="-4.43" y="7.725" dx="1.6" dy="1.55" layer="1" roundness="50"/>
-<smd name="13" x="-7.49" y="-2.95" dx="1.4" dy="3" layer="1" roundness="50"/>
-<text x="-8.5" y="9.6" size="1.27" layer="25">&gt;NAME</text>
-<text x="-3.5" y="-2.4" size="1.27" layer="27">&gt;VALUE</text>
-<text x="-7.5" y="1.6" size="1.27" layer="48">microSD Connector</text>
+<package name="SOIC127P800X215-8N">
+<smd name="1" x="-3.6068" y="1.905" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="2" x="-3.6068" y="0.635" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="3" x="-3.6068" y="-0.635" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="4" x="-3.6068" y="-1.905" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="5" x="3.6068" y="-1.905" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="6" x="3.6068" y="-0.635" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="7" x="3.6068" y="0.635" dx="1.4732" dy="0.5334" layer="1"/>
+<smd name="8" x="3.6068" y="1.905" dx="1.4732" dy="0.5334" layer="1"/>
+<wire x1="-2.6416" y1="1.651" x2="-2.6416" y2="2.159" width="0" layer="51"/>
+<wire x1="-2.6416" y1="2.159" x2="-3.9878" y2="2.159" width="0" layer="51"/>
+<wire x1="-3.9878" y1="2.159" x2="-3.9878" y2="1.651" width="0" layer="51"/>
+<wire x1="-3.9878" y1="1.651" x2="-2.6416" y2="1.651" width="0" layer="51"/>
+<wire x1="-2.6416" y1="0.381" x2="-2.6416" y2="0.889" width="0" layer="51"/>
+<wire x1="-2.6416" y1="0.889" x2="-3.9878" y2="0.889" width="0" layer="51"/>
+<wire x1="-3.9878" y1="0.889" x2="-3.9878" y2="0.381" width="0" layer="51"/>
+<wire x1="-3.9878" y1="0.381" x2="-2.6416" y2="0.381" width="0" layer="51"/>
+<wire x1="-2.6416" y1="-0.889" x2="-2.6416" y2="-0.381" width="0" layer="51"/>
+<wire x1="-2.6416" y1="-0.381" x2="-3.9878" y2="-0.381" width="0" layer="51"/>
+<wire x1="-3.9878" y1="-0.381" x2="-3.9878" y2="-0.889" width="0" layer="51"/>
+<wire x1="-3.9878" y1="-0.889" x2="-2.6416" y2="-0.889" width="0" layer="51"/>
+<wire x1="-2.6416" y1="-2.159" x2="-2.6416" y2="-1.651" width="0" layer="51"/>
+<wire x1="-2.6416" y1="-1.651" x2="-3.9878" y2="-1.651" width="0" layer="51"/>
+<wire x1="-3.9878" y1="-1.651" x2="-3.9878" y2="-2.159" width="0" layer="51"/>
+<wire x1="-3.9878" y1="-2.159" x2="-2.6416" y2="-2.159" width="0" layer="51"/>
+<wire x1="2.6416" y1="-1.651" x2="2.6416" y2="-2.159" width="0" layer="51"/>
+<wire x1="2.6416" y1="-2.159" x2="3.9878" y2="-2.159" width="0" layer="51"/>
+<wire x1="3.9878" y1="-2.159" x2="3.9878" y2="-1.651" width="0" layer="51"/>
+<wire x1="3.9878" y1="-1.651" x2="2.6416" y2="-1.651" width="0" layer="51"/>
+<wire x1="2.6416" y1="-0.381" x2="2.6416" y2="-0.889" width="0" layer="51"/>
+<wire x1="2.6416" y1="-0.889" x2="3.9878" y2="-0.889" width="0" layer="51"/>
+<wire x1="3.9878" y1="-0.889" x2="3.9878" y2="-0.381" width="0" layer="51"/>
+<wire x1="3.9878" y1="-0.381" x2="2.6416" y2="-0.381" width="0" layer="51"/>
+<wire x1="2.6416" y1="0.889" x2="2.6416" y2="0.381" width="0" layer="51"/>
+<wire x1="2.6416" y1="0.381" x2="3.9878" y2="0.381" width="0" layer="51"/>
+<wire x1="3.9878" y1="0.381" x2="3.9878" y2="0.889" width="0" layer="51"/>
+<wire x1="3.9878" y1="0.889" x2="2.6416" y2="0.889" width="0" layer="51"/>
+<wire x1="2.6416" y1="2.159" x2="2.6416" y2="1.651" width="0" layer="51"/>
+<wire x1="2.6416" y1="1.651" x2="3.9878" y2="1.651" width="0" layer="51"/>
+<wire x1="3.9878" y1="1.651" x2="3.9878" y2="2.159" width="0" layer="51"/>
+<wire x1="3.9878" y1="2.159" x2="2.6416" y2="2.159" width="0" layer="51"/>
+<wire x1="-2.6416" y1="-2.6416" x2="2.6416" y2="-2.6416" width="0" layer="51"/>
+<wire x1="2.6416" y1="-2.6416" x2="2.6416" y2="2.6416" width="0" layer="51"/>
+<wire x1="2.6416" y1="2.6416" x2="0.3048" y2="2.6416" width="0" layer="51"/>
+<wire x1="0.3048" y1="2.6416" x2="-0.3048" y2="2.6416" width="0" layer="51"/>
+<wire x1="-0.3048" y1="2.6416" x2="-2.6416" y2="2.6416" width="0" layer="51"/>
+<wire x1="-2.6416" y1="2.6416" x2="-2.6416" y2="-2.6416" width="0" layer="51"/>
+<wire x1="0.3048" y1="2.6416" x2="-0.3048" y2="2.6416" width="0" layer="51" curve="-180"/>
+<text x="-4.445" y="2.3114" size="1.27" layer="51" ratio="6" rot="SR0">*</text>
+<wire x1="2.6416" y1="2.413" x2="2.6416" y2="2.6416" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="1.143" x2="2.6416" y2="1.397" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-0.127" x2="2.6416" y2="0.127" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-1.397" x2="2.6416" y2="-1.143" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-2.413" x2="-2.6416" y2="-2.6416" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-1.143" x2="-2.6416" y2="-1.397" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="0.127" x2="-2.6416" y2="-0.127" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="-2.6416" x2="2.6416" y2="-2.6416" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="-2.6416" x2="2.6416" y2="-2.413" width="0.1524" layer="21"/>
+<wire x1="2.6416" y1="2.6416" x2="0.3048" y2="2.6416" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.6416" x2="-0.3048" y2="2.6416" width="0.1524" layer="21"/>
+<wire x1="-0.3048" y1="2.6416" x2="-2.6416" y2="2.6416" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="2.6416" x2="-2.6416" y2="2.413" width="0.1524" layer="21"/>
+<wire x1="-2.6416" y1="1.397" x2="-2.6416" y2="1.143" width="0.1524" layer="21"/>
+<wire x1="0.3048" y1="2.6416" x2="-0.3048" y2="2.6416" width="0.1524" layer="21" curve="-180"/>
+<text x="-4.445" y="2.3114" size="1.27" layer="21" ratio="6" rot="SR0">*</text>
+<text x="-3.4544" y="4.445" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-3.4544" y="-5.715" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
-<symbol name="MICROSD_SPI_MODE">
-<wire x1="7.62" y1="15.24" x2="7.62" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="7.62" y1="-15.24" x2="-12.7" y2="-15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="-15.24" x2="-12.7" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="7.62" y2="15.24" width="0.254" layer="94"/>
-<wire x1="-12.7" y1="15.24" x2="-7.62" y2="10.16" width="0.254" layer="94" curve="-90"/>
-<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-10.16" width="0.254" layer="94"/>
-<wire x1="-7.62" y1="-10.16" x2="-12.7" y2="-15.24" width="0.254" layer="94" curve="-90"/>
-<text x="-12.7" y="20.32" size="1.778" layer="95">&gt;NAME</text>
-<text x="-12.7" y="17.78" size="1.778" layer="96">&gt;VALUE</text>
-<text x="-5.08" y="7.62" size="1.778" layer="94" rot="R270">microSD CARD</text>
-<pin name="NC" x="12.7" y="12.7" length="middle" rot="R180"/>
-<pin name="/CS" x="12.7" y="10.16" length="middle" rot="R180"/>
-<pin name="DI" x="12.7" y="7.62" length="middle" rot="R180"/>
-<pin name="VDD" x="12.7" y="5.08" length="middle" rot="R180"/>
-<pin name="CLK" x="12.7" y="2.54" length="middle" rot="R180"/>
-<pin name="VSS" x="12.7" y="0" length="middle" rot="R180"/>
-<pin name="DO" x="12.7" y="-2.54" length="middle" rot="R180"/>
-<pin name="RSV" x="12.7" y="-5.08" length="middle" rot="R180"/>
-<pin name="CD(1)" x="12.7" y="-10.16" length="middle" rot="R180"/>
-<pin name="CD(2)" x="12.7" y="-12.7" length="middle" rot="R180"/>
+<symbol name="S25FL064K0SMFI011">
+<pin name="VCC" x="-40.64" y="7.62" length="middle" direction="pwr"/>
+<pin name="CLK" x="-40.64" y="2.54" length="middle" direction="in"/>
+<pin name="WP_(IO2)" x="-40.64" y="0" length="middle"/>
+<pin name="SI_(IO0)" x="-40.64" y="-2.54" length="middle"/>
+<pin name="HOLD_(IO3)" x="-40.64" y="-5.08" length="middle"/>
+<pin name="CS" x="-40.64" y="-7.62" length="middle" direction="in"/>
+<pin name="GND" x="-40.64" y="-12.7" length="middle" direction="pas"/>
+<pin name="SO_(IO1)" x="40.64" y="7.62" length="middle" direction="out" rot="R180"/>
+<wire x1="-35.56" y1="12.7" x2="-35.56" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="-35.56" y1="-17.78" x2="35.56" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="35.56" y1="-17.78" x2="35.56" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="35.56" y1="12.7" x2="-35.56" y2="12.7" width="0.4064" layer="94"/>
+<text x="-5.3594" y="16.7386" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
+<text x="-4.2418" y="-22.098" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="MICROSD_SPI_MODE">
-<description>&lt;b&gt;MOLEX - 49225-0821 - CONNECTEUR MICRO SD PUSH/PUSH REV&lt;/b&gt;&lt;hr&gt;&lt;p&gt;Fabricant: MOLEX&lt;br&gt;Code commande Farnell: &lt;a href="http://fr.farnell.com/molex/49225-0821/connecteur-micro-sd-push-push-rev/dp/1366700?Ntt=1366700"&gt;1366700&lt;/a&gt;&lt;br&gt;Référence fabricant: 49225-0821 &lt;/p&gt;&lt;img src="MOLEX - 49225-0821 - CONNECTEUR MICRO SD.png"&gt;</description>
+<deviceset name="S25FL064K0SMFI011" prefix="U">
+<description>64-Mbit CMOS 3.0 Volt Flash Memory</description>
 <gates>
-<gate name="G$1" symbol="MICROSD_SPI_MODE" x="0" y="0"/>
+<gate name="A" symbol="S25FL064K0SMFI011" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="MICRO_SD_CONNECTOR">
+<device name="" package="SOIC127P800X215-8N">
 <connects>
-<connect gate="G$1" pin="/CS" pad="2"/>
-<connect gate="G$1" pin="CD(1)" pad="9"/>
-<connect gate="G$1" pin="CD(2)" pad="10"/>
-<connect gate="G$1" pin="CLK" pad="5"/>
-<connect gate="G$1" pin="DI" pad="3"/>
-<connect gate="G$1" pin="DO" pad="7"/>
-<connect gate="G$1" pin="NC" pad="1"/>
-<connect gate="G$1" pin="RSV" pad="8"/>
-<connect gate="G$1" pin="VDD" pad="4"/>
-<connect gate="G$1" pin="VSS" pad="6"/>
+<connect gate="A" pin="CLK" pad="6"/>
+<connect gate="A" pin="CS" pad="1"/>
+<connect gate="A" pin="GND" pad="4"/>
+<connect gate="A" pin="HOLD_(IO3)" pad="7"/>
+<connect gate="A" pin="SI_(IO0)" pad="5"/>
+<connect gate="A" pin="SO_(IO1)" pad="2"/>
+<connect gate="A" pin="VCC" pad="8"/>
+<connect gate="A" pin="WP_(IO2)" pad="3"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="MPN" value="S25FL064K0SMFI011" constant="no"/>
+<attribute name="OC_FARNELL" value="1861631" constant="no"/>
+<attribute name="OC_NEWARK" value="27T2974" constant="no"/>
+<attribute name="PACKAGE" value="SOIC-8" constant="no"/>
+<attribute name="SUPPLIER" value="SPANSION" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -16236,7 +16261,10 @@ Source: http://products.nichicon.co.jp/en/pdf/XJA043/e-ud.pdf</description>
 <part name="C9" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="C10" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="GND12" library="supply1" deviceset="GND" device=""/>
-<part name="CON_SD" library="con-molex-microsd" deviceset="MICROSD_SPI_MODE" device=""/>
+<part name="U5" library="Spansion_By_element14_Batch_1" deviceset="S25FL064K0SMFI011" device=""/>
+<part name="GND13" library="supply1" deviceset="GND" device=""/>
+<part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
+<part name="GND14" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16256,6 +16284,10 @@ connector ref</text>
 use BAT_IN, since regulator may
 disconnect the load and PV may
 not produce enough power</text>
+<text x="190.5" y="132.08" size="1.778" layer="97">note:
+actual model is S25FL127SABMFI101
+WP# not connected, internal pullup
+HOLD# not connected, internal pullup</text>
 </plain>
 <instances>
 <instance part="R1" gate="G$1" x="68.58" y="208.28" rot="R90"/>
@@ -16312,7 +16344,10 @@ not produce enough power</text>
 <instance part="C9" gate="G$1" x="76.2" y="50.8"/>
 <instance part="C10" gate="G$1" x="111.76" y="48.26"/>
 <instance part="GND12" gate="1" x="111.76" y="38.1"/>
-<instance part="CON_SD" gate="G$1" x="2.54" y="66.04"/>
+<instance part="U5" gate="A" x="210.82" y="109.22"/>
+<instance part="GND13" gate="1" x="167.64" y="91.44"/>
+<instance part="C11" gate="G$1" x="256.54" y="101.6"/>
+<instance part="GND14" gate="1" x="256.54" y="91.44"/>
 </instances>
 <busses>
 </busses>
@@ -16493,6 +16528,17 @@ not produce enough power</text>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="43.18" x2="111.76" y2="40.64" width="0.1524" layer="91"/>
 <pinref part="GND12" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="U5" gate="A" pin="GND"/>
+<wire x1="170.18" y1="96.52" x2="167.64" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="167.64" y1="96.52" x2="167.64" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="GND13" gate="1" pin="GND"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="2"/>
+<wire x1="256.54" y1="96.52" x2="256.54" y2="93.98" width="0.1524" layer="91"/>
+<pinref part="GND14" gate="1" pin="GND"/>
 </segment>
 </net>
 <net name="PV_IN" class="0">
@@ -16701,6 +16747,16 @@ not produce enough power</text>
 <wire x1="139.7" y1="251.46" x2="139.7" y2="248.92" width="0.1524" layer="91"/>
 <junction x="139.7" y="251.46"/>
 </segment>
+<segment>
+<pinref part="U5" gate="A" pin="VCC"/>
+<wire x1="170.18" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
+<label x="157.48" y="116.84" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="C11" gate="G$1" pin="1"/>
+<wire x1="256.54" y1="104.14" x2="256.54" y2="106.68" width="0.1524" layer="91"/>
+<label x="254" y="106.68" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="USB_5V" class="0">
 <segment>
@@ -16770,6 +16826,34 @@ not produce enough power</text>
 <pinref part="U4" gate="A" pin="OUT"/>
 <wire x1="129.54" y1="83.82" x2="142.24" y2="83.82" width="0.1524" layer="91"/>
 <label x="129.54" y="83.82" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FLASH_SCK" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="CLK"/>
+<wire x1="170.18" y1="111.76" x2="157.48" y2="111.76" width="0.1524" layer="91"/>
+<label x="154.94" y="111.76" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FLASH_MOSI" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="SI_(IO0)"/>
+<wire x1="170.18" y1="106.68" x2="157.48" y2="106.68" width="0.1524" layer="91"/>
+<label x="154.94" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FLASH_CSN" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="CS"/>
+<wire x1="170.18" y1="101.6" x2="157.48" y2="101.6" width="0.1524" layer="91"/>
+<label x="154.94" y="101.6" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="FLASH_MISO" class="0">
+<segment>
+<pinref part="U5" gate="A" pin="SO_(IO1)"/>
+<wire x1="251.46" y1="116.84" x2="264.16" y2="116.84" width="0.1524" layer="91"/>
+<label x="251.46" y="116.84" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>

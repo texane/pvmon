@@ -54,18 +54,18 @@ http://fr.farnell.com/texas-instruments/lm1117mp-3-3/regulateur-ldo-3-3v-1117-so
 x1
 
 
-female headers
+Teensy female headers
 xxx
 
 
 xxx
-microsd connector
-http://fr.farnell.com/molex/502570-0893/connecteur-carte-memoire-microsd/dp/2060731
-1.84 euros
+Flash memory, SPI, 16MB
+http://fr.farnell.com/spansion/s25fl127sabmfi101/memoire-flash-128mbit-8soic/dp/2328002
+3.03 euros
 x1
 
 
-xxx
+CON_PV, CON_BAT, CON_LOAD
 power connectors 4 channels
 http://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/2008006
 0.606 euros
