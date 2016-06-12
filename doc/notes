@@ -135,3 +135,12 @@ n = 16 * 1024 * 1024 / 10
 which equals d days:
 d = (n * 30) / (60 * 60 * 24)
 d = 582
+
+
+[ INA choices, second pass ]
+
+ina149
+too expensive (7 euros per amplifier)
+
+ina282
+but vin+ - vin- too low (ie. should be at least 30V)
