@@ -16227,7 +16227,6 @@ at 25/07/2012 10:26:07</description>
 <part name="U$1" library="Teensy_3_and_LC_Series_Boards_v1.1" deviceset="TEENSY_3.1_ALL_PINS" device=""/>
 <part name="U2" library="NSC-LM1117MP-3.3" deviceset="LM1117MP-3.3" device=""/>
 <part name="CON_SPI" library="con-lstb" deviceset="MA06-1" device=""/>
-<part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="C1" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="C2" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="GND2" library="supply1" deviceset="GND" device=""/>
@@ -16249,7 +16248,6 @@ at 25/07/2012 10:26:07</description>
 <part name="U3" library="TI-INA213AIDCKT" deviceset="INA213AIDCKT" device=""/>
 <part name="R5" library="rcl" deviceset="R-EU_" device="R0603" value="470K"/>
 <part name="R6" library="rcl" deviceset="R-EU_" device="R0603" value="20K"/>
-<part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="C7" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="C8" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="GND10" library="supply1" deviceset="GND" device=""/>
@@ -16265,6 +16263,7 @@ at 25/07/2012 10:26:07</description>
 <part name="GND13" library="supply1" deviceset="GND" device=""/>
 <part name="C11" library="rcl" deviceset="C-EU" device="C1206" value="100n"/>
 <part name="GND14" library="supply1" deviceset="GND" device=""/>
+<part name="GND1" library="supply1" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -16278,7 +16277,7 @@ from USB or battery</text>
 <text x="-7.62" y="167.64" size="1.778" layer="97">note:
 IN: from xxx, before shunt
 OUT: to xxx, after shunt</text>
-<text x="-30.48" y="106.68" size="1.778" layer="97">todo:
+<text x="-30.48" y="99.06" size="1.778" layer="97">todo:
 connector ref</text>
 <text x="20.32" y="271.78" size="1.778" layer="97">note:
 use BAT_IN, since regulator may
@@ -16303,8 +16302,7 @@ HOLD# not connected, internal pullup</text>
 <attribute name="NAME" x="103.759" y="257.556" size="2.0828" layer="95" ratio="10" rot="SR0"/>
 <attribute name="VALUE" x="112.4712" y="238.7346" size="2.0828" layer="96" ratio="10" rot="SR0"/>
 </instance>
-<instance part="CON_SPI" gate="1" x="-7.62" y="101.6"/>
-<instance part="GND1" gate="1" x="68.58" y="165.1"/>
+<instance part="CON_SPI" gate="1" x="-7.62" y="93.98"/>
 <instance part="C1" gate="G$1" x="76.2" y="177.8"/>
 <instance part="C2" gate="G$1" x="111.76" y="175.26"/>
 <instance part="GND2" gate="1" x="111.76" y="165.1"/>
@@ -16329,7 +16327,6 @@ HOLD# not connected, internal pullup</text>
 </instance>
 <instance part="R5" gate="G$1" x="68.58" y="129.54" rot="R90"/>
 <instance part="R6" gate="G$1" x="68.58" y="114.3" rot="R90"/>
-<instance part="GND9" gate="1" x="68.58" y="101.6"/>
 <instance part="C7" gate="G$1" x="76.2" y="114.3"/>
 <instance part="C8" gate="G$1" x="111.76" y="111.76"/>
 <instance part="GND10" gate="1" x="111.76" y="101.6"/>
@@ -16348,6 +16345,7 @@ HOLD# not connected, internal pullup</text>
 <instance part="GND13" gate="1" x="167.64" y="91.44"/>
 <instance part="C11" gate="G$1" x="256.54" y="101.6"/>
 <instance part="GND14" gate="1" x="256.54" y="91.44"/>
+<instance part="GND1" gate="1" x="15.24" y="111.76"/>
 </instances>
 <busses>
 </busses>
@@ -16355,68 +16353,55 @@ HOLD# not connected, internal pullup</text>
 <net name="SPI_MISO" class="0">
 <segment>
 <pinref part="CON_SPI" gate="1" pin="6"/>
-<wire x1="0" y1="106.68" x2="15.24" y2="106.68" width="0.1524" layer="91"/>
-<label x="2.54" y="106.68" size="1.778" layer="95"/>
+<wire x1="0" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
+<label x="2.54" y="99.06" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_MOSI" class="0">
 <segment>
 <pinref part="CON_SPI" gate="1" pin="5"/>
-<wire x1="0" y1="104.14" x2="15.24" y2="104.14" width="0.1524" layer="91"/>
-<label x="2.54" y="104.14" size="1.778" layer="95"/>
+<wire x1="0" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
+<label x="2.54" y="96.52" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_SCK" class="0">
 <segment>
 <pinref part="CON_SPI" gate="1" pin="4"/>
-<wire x1="0" y1="101.6" x2="15.24" y2="101.6" width="0.1524" layer="91"/>
-<label x="2.54" y="101.6" size="1.778" layer="95"/>
+<wire x1="0" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
+<label x="2.54" y="93.98" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_CS" class="0">
 <segment>
 <pinref part="CON_SPI" gate="1" pin="3"/>
-<wire x1="0" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
-<label x="2.54" y="99.06" size="1.778" layer="95"/>
+<wire x1="0" y1="91.44" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
+<label x="2.54" y="91.44" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="SPI_IRQ" class="0">
 <segment>
 <pinref part="CON_SPI" gate="1" pin="2"/>
-<wire x1="0" y1="96.52" x2="15.24" y2="96.52" width="0.1524" layer="91"/>
-<label x="2.54" y="96.52" size="1.778" layer="95"/>
+<wire x1="0" y1="88.9" x2="15.24" y2="88.9" width="0.1524" layer="91"/>
+<label x="2.54" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="GND" class="0">
 <segment>
 <pinref part="CON_SPI" gate="1" pin="1"/>
-<wire x1="0" y1="93.98" x2="15.24" y2="93.98" width="0.1524" layer="91"/>
-<label x="2.54" y="93.98" size="1.778" layer="95"/>
-</segment>
-<segment>
-<wire x1="0" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
-<label x="2.54" y="154.94" size="1.778" layer="95"/>
-<pinref part="CON_PV" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<wire x1="0" y1="137.16" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
-<label x="2.54" y="137.16" size="1.778" layer="95"/>
-<pinref part="CON_LOAD" gate="G$1" pin="3"/>
+<wire x1="0" y1="86.36" x2="15.24" y2="86.36" width="0.1524" layer="91"/>
+<label x="2.54" y="86.36" size="1.778" layer="95"/>
 </segment>
 <segment>
 <wire x1="0" y1="119.38" x2="15.24" y2="119.38" width="0.1524" layer="91"/>
 <label x="2.54" y="119.38" size="1.778" layer="95"/>
 <pinref part="CON_BAT" gate="G$1" pin="3"/>
-</segment>
-<segment>
-<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="0" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
+<label x="2.54" y="116.84" size="1.778" layer="95"/>
+<pinref part="CON_BAT" gate="G$1" pin="4"/>
+<wire x1="15.24" y1="119.38" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="15.24" y1="116.84" x2="15.24" y2="114.3" width="0.1524" layer="91"/>
+<junction x="15.24" y="116.84"/>
 <pinref part="GND1" gate="1" pin="GND"/>
-<wire x1="68.58" y1="172.72" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
-<pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="170.18" x2="68.58" y2="167.64" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="172.72" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="170.18" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
-<junction x="68.58" y="170.18"/>
 </segment>
 <segment>
 <pinref part="U1" gate="A" pin="REF"/>
@@ -16432,21 +16417,6 @@ HOLD# not connected, internal pullup</text>
 <pinref part="C2" gate="G$1" pin="2"/>
 <wire x1="111.76" y1="170.18" x2="111.76" y2="167.64" width="0.1524" layer="91"/>
 <pinref part="GND2" gate="1" pin="GND"/>
-</segment>
-<segment>
-<wire x1="0" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
-<label x="2.54" y="152.4" size="1.778" layer="95"/>
-<pinref part="CON_PV" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="0" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
-<label x="2.54" y="134.62" size="1.778" layer="95"/>
-<pinref part="CON_LOAD" gate="G$1" pin="4"/>
-</segment>
-<segment>
-<wire x1="0" y1="116.84" x2="15.24" y2="116.84" width="0.1524" layer="91"/>
-<label x="2.54" y="116.84" size="1.778" layer="95"/>
-<pinref part="CON_BAT" gate="G$1" pin="4"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="A1" pin="GND"/>
@@ -16478,16 +16448,6 @@ HOLD# not connected, internal pullup</text>
 <pinref part="C6" gate="G$1" pin="-"/>
 <wire x1="139.7" y1="241.3" x2="139.7" y2="238.76" width="0.1524" layer="91"/>
 <pinref part="GND8" gate="1" pin="GND"/>
-</segment>
-<segment>
-<pinref part="R6" gate="G$1" pin="1"/>
-<pinref part="GND9" gate="1" pin="GND"/>
-<wire x1="68.58" y1="109.22" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
-<pinref part="C7" gate="G$1" pin="2"/>
-<wire x1="68.58" y1="106.68" x2="68.58" y2="104.14" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="109.22" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
-<wire x1="76.2" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
-<junction x="68.58" y="106.68"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="REF"/>
@@ -16854,6 +16814,50 @@ HOLD# not connected, internal pullup</text>
 <pinref part="U5" gate="A" pin="SO_(IO1)"/>
 <wire x1="251.46" y1="116.84" x2="264.16" y2="116.84" width="0.1524" layer="91"/>
 <label x="251.46" y="116.84" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LOAD_GND" class="0">
+<segment>
+<wire x1="0" y1="137.16" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
+<label x="2.54" y="137.16" size="1.778" layer="95"/>
+<pinref part="CON_LOAD" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="0" y1="134.62" x2="15.24" y2="134.62" width="0.1524" layer="91"/>
+<label x="2.54" y="134.62" size="1.778" layer="95"/>
+<pinref part="CON_LOAD" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="R6" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="109.22" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<pinref part="C7" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="109.22" x2="76.2" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="106.68" x2="68.58" y2="106.68" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="106.68" x2="53.34" y2="106.68" width="0.1524" layer="91"/>
+<junction x="68.58" y="106.68"/>
+<label x="53.34" y="106.68" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PV_GND" class="0">
+<segment>
+<wire x1="0" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
+<label x="2.54" y="154.94" size="1.778" layer="95"/>
+<pinref part="CON_PV" gate="G$1" pin="3"/>
+</segment>
+<segment>
+<wire x1="0" y1="152.4" x2="15.24" y2="152.4" width="0.1524" layer="91"/>
+<label x="2.54" y="152.4" size="1.778" layer="95"/>
+<pinref part="CON_PV" gate="G$1" pin="4"/>
+</segment>
+<segment>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="172.72" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
+<pinref part="C1" gate="G$1" pin="2"/>
+<wire x1="76.2" y1="172.72" x2="76.2" y2="170.18" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="170.18" x2="68.58" y2="170.18" width="0.1524" layer="91"/>
+<junction x="68.58" y="170.18"/>
+<wire x1="68.58" y1="170.18" x2="53.34" y2="170.18" width="0.1524" layer="91"/>
+<label x="53.34" y="170.18" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
