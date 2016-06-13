@@ -12,19 +12,25 @@ http://fr.farnell.com/texas-instruments/ina213aidckt/ic-curr-shunt-mon-50v-vsc70
 x3
 
 
-R2
-470K resistor
-http://fr.farnell.com/te-connectivity/cpf0603b470ke1/res-couche-mince-470k-0-1-0-063w/dp/2331232
-0.612 euros
-x3
+xxx
+instrumentation amplifier
+http://fr.farnell.com/texas-instruments/ina146ua/ampli-differentiel-haute-tension/dp/1097463
+4.62 euros
+x2
 
 
-R3
-20K resistor
-http://fr.farnell.com/te-connectivity/cpf0603b20ke1/res-couche-mince-20k-0-1-0-063w/dp/2331029
-0.599 euros
-x3
+xxx
+68K resistor
+http://fr.farnell.com/te-connectivity/cpf-a-0603b68ke1/resistance-couche-mince-68k-0/dp/2483941
+0.601 euros
+x2
 
+
+xxx
+100K resistor
+http://fr.farnell.com/te-connectivity-neohm/cpf0603b100ke1/res-couche-mince-100k-0-1-0-063w/dp/1697402
+0.48 euros
+x2
 
 xxx
 100nF ceramic capacitor
