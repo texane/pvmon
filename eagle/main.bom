@@ -47,9 +47,9 @@ x4
 
 
 xxx
-DC/DC converter, 5V
-http://fr.farnell.com/tracopower/tsrn-1-2450/convertisseur-dc-dc-1a-5v/dp/2280247
-10.20 euros
+DC/DC converter, -12V to -5V
+http://fr.farnell.com/tracopower/tsn-1-2450/conv-dc-dc-non-isole-pol-1-o-p/dp/2414151
+14.50 euros
 x1
 
 
@@ -78,7 +78,7 @@ http://fr.farnell.com/multicomp/mc000036/bornier-ci-noir-5-08mm-vis-04/dp/200800
 x3
 
 
-SPI comm connector
+GPIO HE10 connector
 xxx
 xxx
 xxx
