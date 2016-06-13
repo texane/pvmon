@@ -16597,7 +16597,7 @@ HOLD# not connected, internal pullup</text>
 <label x="-22.86" y="88.9" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="PV_IN" class="0">
+<net name="PV_VPA" class="0">
 <segment>
 <wire x1="0" y1="160.02" x2="15.24" y2="160.02" width="0.1524" layer="91"/>
 <label x="2.54" y="160.02" size="1.778" layer="95"/>
@@ -16615,33 +16615,7 @@ HOLD# not connected, internal pullup</text>
 <wire x1="58.42" y1="205.74" x2="43.18" y2="205.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PV_OUT" class="0">
-<segment>
-<wire x1="0" y1="157.48" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
-<label x="2.54" y="157.48" size="1.778" layer="95"/>
-<pinref part="CON_PV" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="U1" gate="A" pin="IN-"/>
-<wire x1="83.82" y1="203.2" x2="71.12" y2="203.2" width="0.1524" layer="91"/>
-<label x="71.12" y="203.2" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="R1" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="193.04" x2="58.42" y2="190.5" width="0.1524" layer="91"/>
-<label x="43.18" y="190.5" size="1.778" layer="95"/>
-<pinref part="R2" gate="G$1" pin="2"/>
-<wire x1="58.42" y1="190.5" x2="43.18" y2="190.5" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="187.96" x2="58.42" y2="190.5" width="0.1524" layer="91"/>
-<junction x="58.42" y="190.5"/>
-</segment>
-<segment>
-<pinref part="U6" gate="A" pin="VIN+"/>
-<wire x1="83.82" y1="160.02" x2="71.12" y2="160.02" width="0.1524" layer="91"/>
-<label x="71.12" y="160.02" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="LOAD_IN" class="0">
+<net name="LOAD_VPA" class="0">
 <segment>
 <wire x1="0" y1="142.24" x2="15.24" y2="142.24" width="0.1524" layer="91"/>
 <label x="2.54" y="142.24" size="1.778" layer="95"/>
@@ -16659,25 +16633,7 @@ HOLD# not connected, internal pullup</text>
 <label x="71.12" y="25.4" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LOAD_OUT" class="0">
-<segment>
-<wire x1="0" y1="139.7" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
-<label x="2.54" y="139.7" size="1.778" layer="95"/>
-<pinref part="CON_LOAD" gate="G$1" pin="2"/>
-</segment>
-<segment>
-<pinref part="R4" gate="G$1" pin="1"/>
-<wire x1="58.42" y1="17.78" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
-<label x="43.18" y="15.24" size="1.778" layer="95"/>
-<wire x1="58.42" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="U3" gate="A" pin="IN-"/>
-<wire x1="83.82" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
-<label x="71.12" y="22.86" size="1.778" layer="95"/>
-</segment>
-</net>
-<net name="BAT_IN" class="0">
+<net name="BAT_VPA" class="0">
 <segment>
 <wire x1="0" y1="124.46" x2="15.24" y2="124.46" width="0.1524" layer="91"/>
 <label x="2.54" y="124.46" size="1.778" layer="95"/>
@@ -16710,7 +16666,7 @@ HOLD# not connected, internal pullup</text>
 <label x="63.5" y="246.38" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BAT_OUT" class="0">
+<net name="BAT_VPB" class="0">
 <segment>
 <wire x1="0" y1="121.92" x2="15.24" y2="121.92" width="0.1524" layer="91"/>
 <label x="2.54" y="121.92" size="1.778" layer="95"/>
@@ -16911,7 +16867,7 @@ HOLD# not connected, internal pullup</text>
 <label x="264.16" y="71.12" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="LOAD_GND" class="0">
+<net name="LOAD_VN" class="0">
 <segment>
 <wire x1="0" y1="137.16" x2="15.24" y2="137.16" width="0.1524" layer="91"/>
 <label x="2.54" y="137.16" size="1.778" layer="95"/>
@@ -16923,7 +16879,7 @@ HOLD# not connected, internal pullup</text>
 <pinref part="CON_LOAD" gate="G$1" pin="4"/>
 </segment>
 </net>
-<net name="PV_GND" class="0">
+<net name="PV_VN" class="0">
 <segment>
 <wire x1="0" y1="154.94" x2="15.24" y2="154.94" width="0.1524" layer="91"/>
 <label x="2.54" y="154.94" size="1.778" layer="95"/>
@@ -17001,7 +16957,7 @@ HOLD# not connected, internal pullup</text>
 <label x="71.12" y="68.58" size="1.778" layer="95"/>
 </segment>
 </net>
-<net name="BAT_GND" class="0">
+<net name="BAT_VN" class="0">
 <segment>
 <wire x1="0" y1="119.38" x2="15.24" y2="119.38" width="0.1524" layer="91"/>
 <label x="2.54" y="119.38" size="1.778" layer="95"/>
@@ -17074,6 +17030,50 @@ HOLD# not connected, internal pullup</text>
 <pinref part="CON_GPIO" gate="G$1" pin="9"/>
 <wire x1="2.54" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
 <label x="5.08" y="99.06" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="PV_VPB" class="0">
+<segment>
+<wire x1="0" y1="157.48" x2="15.24" y2="157.48" width="0.1524" layer="91"/>
+<label x="2.54" y="157.48" size="1.778" layer="95"/>
+<pinref part="CON_PV" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="U1" gate="A" pin="IN-"/>
+<wire x1="83.82" y1="203.2" x2="71.12" y2="203.2" width="0.1524" layer="91"/>
+<label x="71.12" y="203.2" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="193.04" x2="58.42" y2="190.5" width="0.1524" layer="91"/>
+<label x="43.18" y="190.5" size="1.778" layer="95"/>
+<pinref part="R2" gate="G$1" pin="2"/>
+<wire x1="58.42" y1="190.5" x2="43.18" y2="190.5" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="187.96" x2="58.42" y2="190.5" width="0.1524" layer="91"/>
+<junction x="58.42" y="190.5"/>
+</segment>
+<segment>
+<pinref part="U6" gate="A" pin="VIN+"/>
+<wire x1="83.82" y1="160.02" x2="71.12" y2="160.02" width="0.1524" layer="91"/>
+<label x="71.12" y="160.02" size="1.778" layer="95"/>
+</segment>
+</net>
+<net name="LOAD_VPB" class="0">
+<segment>
+<wire x1="0" y1="139.7" x2="15.24" y2="139.7" width="0.1524" layer="91"/>
+<label x="2.54" y="139.7" size="1.778" layer="95"/>
+<pinref part="CON_LOAD" gate="G$1" pin="2"/>
+</segment>
+<segment>
+<pinref part="R4" gate="G$1" pin="1"/>
+<wire x1="58.42" y1="17.78" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<label x="43.18" y="15.24" size="1.778" layer="95"/>
+<wire x1="58.42" y1="15.24" x2="43.18" y2="15.24" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="U3" gate="A" pin="IN-"/>
+<wire x1="83.82" y1="22.86" x2="71.12" y2="22.86" width="0.1524" layer="91"/>
+<label x="71.12" y="22.86" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
